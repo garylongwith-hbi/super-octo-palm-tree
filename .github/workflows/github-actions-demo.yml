@@ -16,7 +16,7 @@ jobs:
     steps:
       - run: |
           echo "The job was triggered by ${{ github.event_name }}"
-          echo "The branch is ${{ github.ref }}" in repository ${{ github.repository }}"
+          echo "The branch is ${{ github.ref }} in repository ${{ github.repository }}"
 
       - name: 'Checkout Repository...'
         uses: actions/checkout@v4
